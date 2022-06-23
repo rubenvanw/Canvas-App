@@ -1,0 +1,138 @@
+* {
+  color: #343537;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+h1 {
+  color: #343537;
+  font-size: 9vh;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #343537;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.container-canvas {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  border: 1px solid #343537;
+}
+
+.container-options {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-options-wrapper {
+  margin-bottom: 2.5rem;
+}
+
+.canvas-image {
+  max-width: 80%;
+  max-height: 80%;
+  margin-top: 1rem;
+}
+
+.comment-section {
+  max-width: 80%;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.comment-datetime {
+  font-size: 12px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  ul {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .container {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .canvas-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .container-canvas {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .container-options {
+    width: 100%;
+  }
+
+  .container-options-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .comment-section {
+    max-width: 90%;
+    max-height: 100%;
+    font-size: 14px;
+    overflow-y: hidden;
+  }
+
+  textarea {
+    height: 10em;
+    width: 90vw;
+  }
+
+  .comment-datetime {
+    font-size: 10px;
+  }
+}
